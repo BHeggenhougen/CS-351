@@ -17,3 +17,10 @@
 | hash-02        | -O3 -march=native -flto | 8.57          | 6.94          | 1.27            | 2896              | 116686.11  | 40.28                   |
 | hash-03        | -O3 -march=native -flto | 8.14          | 6.78          | 1.27            | 3472              | 122850.12  | 42.41                   |
 | hash-04        | -O3 -march=native -flto | 7.29          | 6.69          | 0.52            | 5012360           | 137174.21  | 47.36                   |
+
+# Questions:
+1. This operation accounts for most of hash-00's runtime: input >> numHashes;. This operation reads in values and formats them one at a time, which is part of the reason why this program takes so long.
+2. There is a difference in the time hash-01 and hash-02 take to allocate memory because hash-01 uses new[] and delete[], while hash 2 uses alloca(). hash-02 is faster because alloca() is generally faster than using new[] and delete[], although it does have a risk of stack overflow.
+3. There is an appreciable speed difference from hash-03 using a fixed array because it does not need to allocate or deallocate when hashing. This method is good for when you know the size of your input and are sure you do not need to make the array bigger.
+4. The memory usage of hash-04 is so much larger than the others because it uses mmap, which takes the entire input file and puts it into memory, while the other functions only store small amounts of the file in memory at a time.
+5. I tried these compiler options: -O3 -march=native -flto. They made all the programs run faster than with no optimizations. Only hash-01 performed significantly better than when it was run using -O2, with the rest of the hashes performing about on par with -O2 optimization.
