@@ -1,5 +1,5 @@
 # CS-351
-# Program-1:
+# Project-1:
 | Program        | Optimization Level      | Real Time (s) | User Time (s) | System Time (s) | Memory Usage (KB) | Throughput | Performance Improvement |
 |----------------|-------------------------|---------------|---------------|-----------------|-------------------|------------|-------------------------|
 | hash-00 (base) | -g                      | 357.25        | 341.46        | 10.06           | 2896              | 2799.16    | N/A                     |
