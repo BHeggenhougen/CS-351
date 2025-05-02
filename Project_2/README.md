@@ -23,4 +23,9 @@
 
 # Speed-up vs. Number of Threads
 ![Speed-up vs  Number of Threads](https://github.com/user-attachments/assets/129aa174-0e56-4d5a-927e-76a94ee7054a)
-)
+
+# Question 1
+Notice that there is a maximum speed-up factor, but not necessarily using the most threads. Make a guess (i.e., write a short paragraph) as to why you think more threads aren't necessary better. Here's a hint: think about a group of people waiting to go through a turnstile (like at BART or Disney World). Are more people able to go through it just because there are more people?
+
+
+More threads are not necessarily better because all the threads still need to share resources. In terms of the analogy, a lot of people does not increase the amount of people able to go through because there is a limited amount of a resource, in this case, it is space. So, to some point, if there are enough resources to supply every thread with some left over, increasing the number of threads will increase the speed; however, once there are more threads thatn there are resources to supply those threads, they end up clogging up the system and slowing it down.
