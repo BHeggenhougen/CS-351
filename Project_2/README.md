@@ -1,3 +1,6 @@
+# Project-2
+
+# Table of Data
 |Thread<br>Count|Wall Clock<br>Time|User Time|System Time|Speedup|
 |:--:|--:|--:|--:|:--:|
 |1|14.61|13.91| 0.52|1.00|
@@ -17,3 +20,7 @@
 |64| 1.95|17.12|25.81| 7.49|
 |72| 1.90|17.11|32.25| 7.69|
 |80| 1.97|17.57|18.11| 7.42|
+
+# Speed-up vs. Number of Threads
+![Speed-up vs. Number of Threads](![Speed-up vs  Number of Threads](https://github.com/user-attachments/assets/129aa174-0e56-4d5a-927e-76a94ee7054a)
+)
