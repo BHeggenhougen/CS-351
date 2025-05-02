@@ -22,5 +22,5 @@
 |80| 1.97|17.57|18.11| 7.42|
 
 # Speed-up vs. Number of Threads
-![Speed-up vs. Number of Threads](![Speed-up vs  Number of Threads](https://github.com/user-attachments/assets/129aa174-0e56-4d5a-927e-76a94ee7054a)
+![Speed-up vs  Number of Threads](https://github.com/user-attachments/assets/129aa174-0e56-4d5a-927e-76a94ee7054a)
 )
