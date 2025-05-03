@@ -25,7 +25,22 @@
 ![Speed-up vs  Number of Threads](https://github.com/user-attachments/assets/129aa174-0e56-4d5a-927e-76a94ee7054a)
 
 # Question 1
-Notice that there is a maximum speed-up factor, but not necessarily using the most threads. Make a guess (i.e., write a short paragraph) as to why you think more threads aren't necessary better. Here's a hint: think about a group of people waiting to go through a turnstile (like at BART or Disney World). Are more people able to go through it just because there are more people?
+Q. Notice that there is a maximum speed-up factor, but not necessarily using the most threads. Make a guess (i.e., write a short paragraph) as to why you think more threads aren't necessary better. Here's a hint: think about a group of people waiting to go through a turnstile (like at BART or Disney World). Are more people able to go through it just because there are more people?
 
 
-More threads are not necessarily better because all the threads still need to share resources. In terms of the analogy, a lot of people does not increase the amount of people able to go through because there is a limited amount of a resource, in this case, it is space. So, to some point, if there are enough resources to supply every thread with some left over, increasing the number of threads will increase the speed; however, once there are more threads thatn there are resources to supply those threads, they end up clogging up the system and slowing it down.
+A. More threads are not necessarily better because all the threads still need to share resources. In terms of the analogy, a lot of people does not increase the amount of people able to go through because there is a limited amount of a resource, in this case, it is space. So, to some point, if there are enough resources to supply every thread with some left over, increasing the number of threads will increase the speed; however, once there are more threads than there are resources to supply those threads, they end up clogging up the system and slowing it down.
+
+# Question 2
+Q. Do you think it's possible to get "perfect scaling" — meaning that the $(1-p)$ terms is zero?
+
+
+A. I do not think it is possible to get "perfect scaling" because some part every program must be sequential since it is impossible to make everything run in parallel.
+
+# Question 3
+$$ speedup = \frac{1}{1 - 0.99699 + \frac{0.99699}{16}} \approx 15.31$$
+
+# Question 4
+Q. In reviewing the graph of speed-ups to number of threads, note that we get pretty linear (when you plot the dots, they're pretty close to being a line) speed-up. What's the slope of that line? (Pick two values, like for one and seven threads, and do the rise-over-run thing you learned in Algebra). Does that linear trend continue as we add more threads? What do you think causes the curve to "flatten out" when we use large thread counts?
+
+
+A. Taking the values of 1.00 for 1 thread and 4.99 for 7 threads we get that the slope of the line is 0.665. As we add more threads, the linear trend does not continue; instead, the curve flattens out. I think the curve flattens out when we use large thread counts because of Amdahl's Law, which tells us that some part of the program is unable to be parallelized no matter how many threads we give the program; therefore, speed-up is not increased with an increase in threads once we get to that bottleneck.
