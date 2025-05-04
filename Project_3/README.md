@@ -4,7 +4,7 @@
 Renders three yellow lines that form a triangle.
 Can be accessed here: https://blue.cs.sonoma.edu/~heggenhougen/project3/shape1.html
 # 2. A 10-sided, Filled Convex Polygon
-Renders a ten-sided shape that is fill yellow---a decagon. Can be accessed here: https://blue.cs.sonoma.edu/~heggenhougen/project3/shape2.html
+Renders a ten-sided shape that is filled yellow---a decagon. Can be accessed here: https://blue.cs.sonoma.edu/~heggenhougen/project3/shape2.html
 # 3. A Five-pointed Star
 # 4. The Same Five-pointed Star, Except That it Rotates
 
