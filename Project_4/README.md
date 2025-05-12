@@ -32,3 +32,15 @@
 
 # Question 1
 
+# Julia Set Rendered with the CPU
+
+![Julia Set](juliaCPU.png)
+
+*Starting point: \( z = 0 \), Mandelbrot version*
+
+# Julia Set Rendered with CUDA
+
+![Julia Set](juliaGPU.png)
+
+*Starting point: \( z = 0 \), Mandelbrot version*
+
