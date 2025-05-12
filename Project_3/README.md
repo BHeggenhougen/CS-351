@@ -10,4 +10,4 @@ Renders a star with five points that is filled in yellow. [My Five-Pointed Star]
 # 4. The Same Five-pointed Star, Except That it Rotates
 Renders a star with five points that is filled in yellow and which rotates counter-clockwise. [My Rotating Star](https://blue.cs.sonoma.edu/~heggenhougen/project3/shape4.html)
 # Extra Credit: The Same Five-pointed Rotating Star, But With More Interesting Colors
-Render
+Renders a star with five points, which rotates counterclockwise and has a green to turquoise gradient. [My Colorful Star](https://blue.cs.sonoma.edu/~heggenhougen/project3/shape5.html)
